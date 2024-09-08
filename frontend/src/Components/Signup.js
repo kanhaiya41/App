@@ -27,7 +27,7 @@ const Signup = () => {
         console.log(input);
         try {
             setLoding(true);
-            const res = await axios.post('http://localhost:8000/api/v1/user/register', input, {
+            const res = await axios.post('https://app-2-22ch.onrender.com/api/v1/user/register', input, {
                 headers: {
                     'Content-Type': 'application/json'
 

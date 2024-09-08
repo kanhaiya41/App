@@ -9,7 +9,7 @@ const useGetSuggestUsers=()=>{
     useEffect(()=>{
         const fetchSuggestedUsers=async()=>{
             try {
-                const res=await axios.get('http://localhost:8000/api/v1/user/suggested',{withCredentials:true});
+                const res=await axios.get('https://app-2-22ch.onrender.com/api/v1/user/suggested',{withCredentials:true});
                 console.log(res.data)
                 if(res.data.success)
                 {

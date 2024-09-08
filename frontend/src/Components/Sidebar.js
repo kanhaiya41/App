@@ -24,7 +24,7 @@ const Sidebar = () => {
 
   const logoutHandler = async () => {
     try {
-      const res = await axios.get('http://localhost:8000/api/v1/user/logout', { withCredentials: true });
+      const res = await axios.get('https://app-2-22ch.onrender.com/api/v1/user/logout', { withCredentials: true });
       if (res.data.success) {
         dispatch(setAuthUser(null));
         dispatch(setSelectedPost(null));
